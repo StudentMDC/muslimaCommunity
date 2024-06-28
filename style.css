@@ -1,0 +1,231 @@
+/* Mise en forme de la page */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: linear-gradient(to right, purple, rgb(38, 7, 56));
+    text-align: center;
+    height: 1000px;
+}
+#WELC {
+    font-size: medium;
+}
+/* Scrollbar style */
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(purple,pink);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(pink,purple);
+}
+/* Google fonts */
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.lemonada-hui {
+    font-family: "Lemonada", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+    color: #fff;
+    text-align: center;
+    background: transparent;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Les elements du header */
+a {
+    color: black;
+
+}
+a:hover {
+    color: yellow;
+
+}
+header a {
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-size: larger;
+    text-decoration: none;
+}
+header a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+header {
+    text-align: center;
+    background: transparent;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+header a {
+    margin-left: 20px;
+}
+
+/* Mise en forme de la page d'acceuil */
+.card{
+    height: 200px;
+    width: 30%;
+    margin: 20px auto;
+    background: rgba( 255, 255, 255, 0.3 );
+    backdrop-filter: blur(20px);
+    box-shadow: 20px 20px 50px 0 rgba( 0, 0, 0, 0.5 );
+    backdrop-filter: blur( 14.5px );
+    border-radius: 10px;
+    border-top: 1px solid rgba( 255, 255, 255, 0.5 );
+    border-right: 1px solid rgba( 255, 255, 255, 0.5 );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    clip-path: inset(30% 30% 30% 50%);
+    transition: all .5s ;
+}
+.card img,.card p{
+    transform: translateY(2000px);
+    opacity: 0;
+}
+.parent .card:hover{
+    clip-path: none;
+    img,p{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    span{
+        display: none;
+    }
+    transition: all .5s ease-in-out;
+}
+#fstimg{
+    width: 60%;
+}
+.parent{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+}
+.main {
+    margin-top: 100px;
+    font-size: larger;
+    color: #fff;
+    text-align: center;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+}
+main {
+    margin-top: 3%;
+}
+main img {
+    width: 15%;
+    height: 10%;
+}
+
+/* Mise en forme des boutons du site */
+.btn {
+    text-align: center;
+    margin-top: 2%;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    border-radius: 2px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 50%;
+    font-size: large;
+    border-radius: 1rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: larger;
+
+}
+.btn:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 10px 10px 42px 10px rgba(255, 255, 255, 0.37);
+}
+/* Mise en forme des logos du site */
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+    background-color: #ffffff57;
+    border-radius: 50px;
+    border: 1px dashed #fff;
+}
+.logo:hover {
+    box-shadow: 0 0 32px rgb(255, 255, 160);
+}
+
+/* Les codes concerenant le login et le sig up*/
+.conteneur {
+    color: #fff;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid white;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 600px;
+    padding-top: 30px;
+    padding: 15px;
+
+}
+.input-box {
+    width: 400px;
+    height: 50px;
+    margin: 30px 0px;
+    position: relative;
+
+}
+.input-box input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 40px;
+    color: #fff;
+}
+.input-box span {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+}
+.input-box input::placeholder {
+    color: white;
+}
+.input-box input:focus {
+    outline: none;
+    border: 1.5px solid rgb(106, 149, 230)
+}
+input::placeholder {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    color: #e8e8e8;
+    transform: translateY(-50%);
+    transition: 150ms ease;
+}
+.input-box input:focus::placeholder {
+    transform: translateY(-50%) scale(0.9);
+    padding: 0 .3em;
+}
+
